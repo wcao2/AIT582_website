@@ -1,0 +1,109 @@
+<!doctype html>
+<!--
+	Course: AIT582 website 
+	Craetor: Wei Cao
+	Crate time:2/23/2019
+	Desc: proposal page
+	-->
+<html lang="en">
+<head>
+		<meta charset="utf-8"/>
+		<title>Wei Cao Website | Proposal page</title>
+		<!--rel:how this link related to the website-->
+		<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+                        <header>
+                              <div class="container">
+                                    <!--use id instead of class cos do not use this everywhere-->
+                                    <div id="branding">
+                                          <!-- span is inline level element,not go to next line -->
+                                          <h1>Wei Cao <span class="highlight"> AIT582 Website</span></h1>  
+                                    </div>                                                            
+                                    
+                                    <div id="schoolPic" style="float: left">
+                                          <a href="https://volgenau.gmu.edu/">
+                                                <img src="./img/VSE.jpg">
+                                          </a>
+                                    </div> 
+
+                                    <div id="AmericanAir" style="float: left">
+                                          <a href="https://www.aa.com/homePage.do">
+                                                <img src="./img/AmericanAir.jpg">
+                                          </a>
+                                    </div>  
+
+                                    <div id="transportation" style="float: left">
+                                          <a href="https://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp?pn=1/">
+                                                <img src="./img/Transportation.png">
+                                          </a>
+                                    </div> 
+                              </div>
+                        </header>
+                        
+                       <nav id="navbar">
+                              <div class="container">
+                                    <ul>
+                                          <li><a href="index.html">Home</a></li>
+                                          <li class="current"><a href="proposal.html">Project Proposal</a></li>
+                                          <li><a href="graph.html">Graph</a></li>
+                                          <li><a href="#">More</a></li>
+                                    </ul>
+                              </div>
+                        </nav>                  
+                  
+      
+
+      <!-- <section id="newsletter">
+      		<div class="container">
+      			<h1><marquee>Welcome to my Project Proposal page</marquee></h1>
+      		</div>
+      </section> -->
+
+      <section id="main">
+      	 <div class="container">
+      	 	<article id="main-col">
+                        <h1 class="page-title">Project proposal</h1>
+                        <p>AIT 582 Final Research Project Proposal : Airline delays in the United States </p>
+                              <p>
+                              Problematic: 
+                              Flight delays are a major problem in US airports. It hurts airports, airlines, and most importantly passengers.  According to BTS ( Bureau of Transportation Statistics ) in 2018 , 18.79% of total 6,619,604 flight operations are delayed ( BTS reports ). Flight delays have negative impacts on the economic scale, as well as on the micro level of airlines, airports and passengers.Furthermore, from the sustainability point of view, delays may also cause environmental damage by increasing fuel consumption and gas emissions. In this project, the team will analyze the main causes of airline delays in major airports in United States. In addition, different major questions about flight delays the team is looking to answer. These questions will tackle different causes of flight delays, the major time where flight delays are the highest, and best periods passenger could fly to avoid fly delays. 
+                              </p>
+                              <p>
+                              The dataset: (preliminary literature search) 
+                              The data consists of flight arrival and departure details for all commercial flights within the USA, from October 1987 to April 2008. For this project we will analyze only the data from the year 2008 for certain reasons. This is a large dataset. There are nearly 120 million records in total for total size of 1.6 gigabytes. For our 2008 dataset the size will be reasonable (500 MB) to work on it for different analysis and to have logic results at the end. The dataset was downloaded originally from two sources. The first source is the Bureau of Transportation Statistics and the other source is US Department of Transportation. Both datasets were published in Kaggle.com website. According to BTS, “The Bureau of Transportation Statistics (BTS) is a politically objective supplier of trusted and statistically sound baseline, contextual, and trend information used to shape transportation policy, investments, and research across the U.S. and abroad”(BTS webpage). BTS is a relevant source for aviation data, transportation economics, and motorways. The US Department of Transportation is a federal Cabinet department of the U.S. government concerned with transportation. This explains that the accuracy and reliability of the dataset the team will work on. 
+                              The U.S aviation industry had major changes in the past 15 years. First of September 11,2001, led to a drop off in flying , and the imposition of new security procedures have affected the travel times. In addition, different articles shows the suffering of major airports such as Los Angeles, JFK New York, and O’hare Chicago Illinois, of airline delays.Worldwide, in 2013, 36% of ﬂights delayed by more than ﬁve minutes in Europe, 31.1% of ﬂights delayed by more than 15 minutes in the United States, and 16.3% of ﬂights were canceled or suffered delays greater than 30 minutes in Brazil. This indicates how relevant this indicator is and how it affects no matter the scale of airline meshes. 
+                              </p>
+                              <p>
+                              Upcoming results to achieve: 
+                              Through this project, the team will answer question concerning the airline delays in the United States. The first question is when is the best time of day of week or time of year to fly to minimise delays? The second question is are some airports have more delays than others? And are some US carriers facing more delays than others ? The aim of the analysis is to provide a graphical summary of important features of the data set and to answer those questions. One of the challenges for this project is the quality of the data. Some values are missing from the dataset for flight cancellation and delays due to weather. The total missing values will not affect the analysis that much. In addition, some columns such as tail number for airplanes and flight number are not important in this analysis so it will be deleted from the dataset which is a part of the data mining process. 
+                              The main tools the team will use is Rstudio and Tableau. the project result offers reference value for both the airline company and the passengers. It will help airline companies arrange their flight more reasonably to reduce the probability of delay and passengers choose a flight with lower delay ratio. 
+                              </p>
+                              <p>
+                              Proposed approach
+                              For this project, the team will focus on 5 major steps for approach. First step is define the questions to answer and investigate. For this step, the team will brainstorm different questions and look through the possibility of answering those questions through a first look to the data. The second step is ingest and store the data. The team will upload the dataset to the analysis tools ( Rstudio, Tableau). In this step, the team will clean the data for any missing values to make the dataset a reliable one for future analysis. The third step is preparing and combine the data. It’s probable that the airline dataset will be combined with other datasets such as meteorological data and airline carriers data. The combination will be occured through Rstudio with appropriate code. The fourth step is performing analyses and build models. During this step the team will visualize the data that will meet the project goals and answer the questions proposed in the first step. In addition, the team will focus on a model for the dataset such as Time series model which will have a deep analysis on the airline delays dataset. The last step in the project is taking actions and decisions. In this step the team will evaluate the data model to see if the project goals are met or not. Conclusions will be built through this step and major outcomes about the project will be finalized. 
+                              </p>
+
+                              <p>
+                              Proposed method for evaluation
+
+                              For this project, each team member will be assigned a task with a certain deadline. The team will collaborate and communicate on daily basis through email or by phone. The team leader will evaluate the team members performances upon deadlines. The team will have evaluation dates which they will meet and see any errors made in the model. In addition, attendance in meetings, completion levels, and participation will help to evaluate each team member performance. As evaluation is based on feedbacks, the team will keep the professor updated with certain progress or any kind of issue faced during the project. It’s probable that during the project some decision will be made. Those decision will be discussed as a team. At the end of the project, each team member will evaluate other team members through evolution forms. The goal of these forms is to analyze team performance and fairness in grading. 
+                              </p>
+                  </article>
+
+                  <aside id="sidebar">
+                        <div class="dark">
+                              <h3>Statement</h3>
+                              <p>This is a group project and I will continue adding some newest results in this website</p>
+                        </div>
+                  </aside>
+      	 </div>
+      </section>
+
+      <footer>
+      		<p>AIT 582 Website, Copyright &copy; 2019</p>
+      </footer>
+
+</body>
+
+</html>

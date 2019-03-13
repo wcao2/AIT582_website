@@ -1,0 +1,206 @@
+body{
+	font-family: Arial, Helvetica,sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	/*1.5 is line height*/
+	font:15px/1.5 Arial, Helvetica,sans-serif;
+	padding: 0;
+	margin:0;
+	background-color: #f4f4f4;
+}
+
+/* Global ====================================*/
+/*container is a class so use . but id use #*/
+.container{
+	text-align: left;
+	width:80%;
+	/*total move to the middle*/
+	margin: auto;
+
+	/*if sth go outside of the div, I don't want to have a scrollbar*/
+	overflow: hidden;
+}
+ul{
+	margin:20px;
+	padding:0; 
+}
+
+/*.dark{
+	padding: 15px;
+	background:#35424a;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-top: 10px;
+}*/
+
+/* Header =================================*/
+header{
+	
+	/*color:#ffffff;*/
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #87CEFA 3px solid;
+	border-bottom-style: dotted;
+	background-image:url('../img/sky.jpg');
+}
+
+
+header #branding{
+	float: left;
+	margin: 0;
+	
+	/*min-height:00px;*/
+}
+
+header .highlight, header .current a{
+	color:black;
+	font-weight: bold;
+
+}
+
+/*change the img size*/
+header #schoolPic img{
+	width: 100px;/*height will be auto as well*/
+	margin-left: 35px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+
+}
+
+header #AmericanAir img{
+	width:110px;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+header #transportation img{
+	width:110px;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+
+#navbar{
+	background-color: white;
+	color: black;
+	height: 50px;
+}
+
+#navbar ul{
+	/*padding:0;the distance from li to the border*/
+	margin-left: 0px;
+	margin-top: 15px;
+	list-style: none;
+	border-width: 1px;
+	border-color: yellow;
+}
+
+#navbar li{
+	display: inline;
+	margin-right: 55px;
+}
+
+
+#navbar a{
+	color:#00CED1;/*white*/
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 15px;
+}
+
+
+/*showcase=============================*/
+#showcase{
+	min-height: 400px;
+	background:url('../img/airline.jpg') no-repeat 0 -400px;/*0 -400px:move down*/
+	/*text-align: left;*/
+	/*color:red;*/
+	padding:20px;
+	margin: 0 0;/*20:; top and bottom; 0:; left and right*/
+}
+
+#showcase h1{
+	margin-top:100px;
+	font-size: 55px;
+	margin-bottom:10px; 
+	padding-left: 115px;
+}
+#showcase p{
+	padding-left: 115px;
+
+}
+
+#showcase a{
+	padding-left: 115px;
+}
+
+.button{
+	color:#2F4F4F	;
+	padding: 10px 15px; /*top and bottom:10px;left and right 15px*/
+	border:none;
+}
+
+.button:hover{
+	color:#00FA9A;
+}
+
+/*.fix-me{
+	position: fixed;
+	top:400px;
+}
+*/
+/*newsletter============================*/
+#newsletter{
+	padding:15px;
+	background:#35424a ;
+}
+
+/*boxes=================================*/
+#boxes{
+	margin-top: 20px;
+}
+
+#boxes .box{
+	color:black;
+	float:left;
+	width: 30%;
+	text-align: center;
+	padding:10px;
+}
+
+#boxes .box img{
+	width: 90px;
+	height: 110px;
+}
+
+/*sidebar*/
+aside#sidebar{
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+
+/*main-col*/
+article#main-col{
+	float:left;
+	width: 65%;
+}
+
+/*in graph.html*/
+.block{
+	float:left;/*want to them horizontally alignment */
+	width:33.3%;
+	border:1px solid #ccc;
+	padding: 10px;
+	box-sizing:border-box;/*it takes padding and border and it takes this stuff in and applies into the width itself*/
+	background-color: white;
+
+}
+
+
+footer{
+	padding: 20px;
+	color: #ffffff;
+	background-color: #e8491d;
+	text-align: center;
+}
